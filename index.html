@@ -30,7 +30,7 @@
 
         class Cadastro {
             constructor() {
-                pessoas = [];
+                this.pessoas = [];
             }
 
             cadastrar() {
@@ -39,7 +39,7 @@
                 do {
                     var nome = prompt("Informe o nome da pessoa:", "nome");
                     var pessoa = new Pessoa(nome);
-                    pessoas.push(pessoa);
+                    this.pessoas.push(pessoa);
 
                     opcao = confirm("Deseja cadastrar outra pessoa?");
                 } while (opcao == true);
